@@ -1,0 +1,136 @@
+:root {
+    --fundo: #2d98ca;
+    --primario: #0f569e;
+    --secundario: #272935;
+    --texto: #ffffff;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--texto);
+    background-color: var(--fundo);
+    margin: 0;
+    padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+}
+
+header {
+    background-color: var(--primario);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+.componente {
+    background-color: var(--secundario);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 70px 0;
+    max-width: 350px;
+    flex-direction: column;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#componentes {
+    background-color: rgb(103, 103, 105);
+        border-radius: 10px;
+        padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+
+    border: 10px solid;
+    border-color: #272935;
+    
+
+}
+
+footer {
+    background-color: var(--primario);
+    text-align: center;
+    padding: 10px;
+}
+
+.pecas {
+    text-align: center;
+
+}
+
+#introducao {
+    background-color: var(--primario);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 70px 0;
+}
+
+
+.escudeiro{
+    background-color: var(--secundario);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 70px 0;
+
+}
+
+#menu {
+    color: inherit;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+
