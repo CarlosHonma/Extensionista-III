@@ -1,32 +1,45 @@
 :root {
-    --fundo: #2d98ca;
-    --primario: #0f569e;
-    --secundario: #272935;
-    --texto: #ffffff;
+    --base-color: #2d98ca;
+    --base-variant: #49a1e4ff;
+    --text-color: #ffffff;
+    --secondary-text-color: #dddddd;
+    --primary-color: #0f569e;
+    --accent-color: #272935;
+}
+
+:root.darkmode {
+	--base-color: #121212;
+	--base-variant: #1e1e1e;
+	--text-color: #ffffff;
+	--secondary-text-color: #bbbbbb;
+	--primary-color: #bb86fc;
+	--accent-color: #03dac6;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--texto);
-    background-color: var(--fundo);
+    color: var(--text-color);
+    background-color: var(--base-color);
     margin: 0;
     padding: 0;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
 }
 
 header {
-    background-color: var(--primario);
-    padding: 20px;
-    text-align: center;
+    background-color: var(--primary-color);
+    padding: 20px 40px;
     position: sticky;
     top: 0;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 header h1 {
     margin: 0;
+    flex: 1;
+    text-align: center;
 }
 
 nav ul {
@@ -39,7 +52,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--texto);
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -49,6 +62,7 @@ main {
 
 section {
     margin-bottom: 40px;
+    background-color: var(--base-color);
 }
 
 a {
@@ -69,7 +83,7 @@ a:active {
 }
 
 .componente {
-    background-color: var(--secundario);
+    background-color: var(--accent-color);
     padding: 15px;
     border-radius: 10px;
     margin: 70px 0;
@@ -100,7 +114,7 @@ a:active {
 }
 
 footer {
-    background-color: var(--primario);
+    background-color: var(--primary-color);
     text-align: center;
     padding: 10px;
 }
@@ -111,7 +125,7 @@ footer {
 }
 
 #introducao {
-    background-color: var(--primario);
+    background-color: var(--primary-color);
     padding: 30px;
     border-radius: 10px;
     margin: 70px 0;
@@ -119,7 +133,7 @@ footer {
 
 
 .escudeiro{
-    background-color: var(--secundario);
+    background-color: var(--accent-color);
     padding: 15px;
     border-radius: 10px;
     margin: 70px 0;
@@ -131,6 +145,66 @@ footer {
     font-weight: bold;
     padding: 5px;
 }
+//Dark mode theme
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#theme-switch span:last-child {
+	display: none;
+}
+
+#theme-switch:hover {
+	background-color: var(--accent-color);
+	transition: background-color 0.2s ease;
+}
+
+.darkmode #theme-switch span:first-child {
+	display: none;
+}
+
+.darkmode #theme-switch span:last-child {
+	display: block;
+}
+
+.darkmode #theme-switch {
+	background-color: #3a435d;
+	box-shadow: 0 0 12px rgba(0, 113, 255, 0.4);
+}
+
+body, button, header, section {
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+	border: none;
+	padding: 0.8em 2em;
+	background-color: var(--primary-color);
+	color: white;
+	border-radius: 4px;
+	font: inherit;
+	font-weight: 500;
+	cursor: pointer;
+	margin: 20px 0;
+}
+p {
+	margin: 10px 0 20 px 0;
+	color: var(--secondary-text);
+}
+
 
 // Quiz styles
 /* General Styles */
@@ -143,7 +217,7 @@ footer {
 
 /* Estilo do corpo da página */
 body {
-	background: --fundo;
+	background: --base-color;
 
 }
 
