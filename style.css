@@ -16,6 +16,11 @@
 	--accent-color: #03dac6;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--text-color);
