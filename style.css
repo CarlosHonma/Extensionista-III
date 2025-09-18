@@ -215,11 +215,6 @@ p {
 	box-sizing: border-box;
 }
 
-/* Estilo do corpo da página */
-body {
-	background: --base-color;
-
-}
 
 /* Estilo do contêiner principal */
 .app {
