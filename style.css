@@ -25,17 +25,22 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--text-color);
     background-color: var(--base-color);
+    padding-top: 100px;
 
 }
 
 header {
     background-color: var(--primary-color);
     padding: 20px 40px;
-    position: sticky;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: fixed;
+    width: 100vw;      /* Garante que cobre toda a largura */
+    left: 0;
+    top: 0;
+    z-index: 1000;     /* Fica acima dos outros elementos */
+    box-sizing: border-box;
 }
 
 header h1 {
