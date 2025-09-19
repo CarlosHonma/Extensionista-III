@@ -4,17 +4,17 @@
     --text-color: #ffffff;
     --secondary-text-color: #9b9cb6ff;
     --primary-color: #58a1e9ff;
-    --accent-color: #545c8dff;
-    --componentes-fundo: #9fa3b3ff;
-    --componentes-borda: #8d95bbff;
+    --accent-color: #e4e4e4ff;
+    --componentes-fundo: #58a1e9ff;
+    --componentes-borda: #404146ff;
 }
 
 :root.darkmode {
-	--base-color: #24378aff;
+	--base-color: #1e2e75ff;
 	--base-variant: #1e1e1e;
 	--text-color: #ffffff;
 	--secondary-text-color: #bbbbbb;
-	--primary-color: #146dc5ff;
+	--primary-color: #0d5dadff;
 	--accent-color: #272935;
     --componentes-fundo: rgb(103, 103, 105);
     --componentes-borda: #272935;
@@ -143,11 +143,15 @@ footer {
 
 
 .escudeiro{
-    background-color: var(--accent-color);
+    background-color: var(--componentes-fundo);
     padding: 15px;
     border-radius: 10px;
     margin: 70px 0;
 
+}
+
+:root.darkmode .escudeiro{
+    background-color: var(--accent-color);
 }
 
 #menu {
@@ -161,6 +165,14 @@ footer {
 }
 
 :root.darkmode .titulo {
+    color: var(--text-color);
+}
+
+.preto {
+    color: black;
+}
+
+:root.darkmode .preto {
     color: var(--text-color);
 }
 
