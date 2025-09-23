@@ -60,9 +60,9 @@ const questions = [
         question: "O que significa a sigla RAM?",
         answers: [
             { id: 1, text: "Rapid Access Memory", correct: false },
-            { id: 2, text: "Random Access Memory", correct: true },
+            { id: 2, text: "Real Active Memory", correct: false },
             { id: 3, text: "Read And Memory", correct: false },
-            { id: 4, text: "Real Active Memory", correct: false },
+            { id: 4, text: "Random Access Memory", correct: true },
         ],
     },
     {
@@ -147,16 +147,16 @@ const questions = [
         question: "Por que a ventilação é uma função importante do gabinete?",
         answers: [
             { id: 1, text: "Para fazer barulho e indicar que está funcionando", correct: false },
-            { id: 2, text: "Para economizar energia elétrica", correct: false },
+            { id: 2, text: "Para dissipar o calor e evitar superaquecimento dos componentes", correct: true },
             { id: 3, text: "Para manter o computador frio ao toque", correct: false },
-            { id: 4, text: "Para dissipar o calor e evitar superaquecimento dos componentes", correct: true },
+            { id: 4, text: "Para economizar energia elétrica", correct: false },
         ],
     },
     {
         question: "O que inclui tipicamente o painel frontal do gabinete?",
         answers: [
-            { id: 1, text: "Apenas o botão de energia", correct: false },
-            { id: 2, text: "Botões de energia e reset, portas USB, entradas de áudio", correct: true },
+            { id: 1, text: "Botões de energia e reset, portas USB, entradas de áudio", correct: true },
+            { id: 2, text: "Apenas o botão de energia", correct: false },
             { id: 3, text: "Somente portas USB", correct: false },
             { id: 4, text: "Apenas ventiladores e sistema de resfriamento", correct: false },
         ],

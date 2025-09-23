@@ -30,6 +30,9 @@ body {
     color: var(--text-color);
     background-color: var(--base-color);
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 }
 
@@ -69,6 +72,7 @@ nav a {
 
 main {
     padding: 20px;
+    flex: 1;
 }
 
 section {
@@ -127,6 +131,7 @@ footer {
     background-color: var(--primary-color);
     text-align: center;
     padding: 10px;
+    margin-top: 40px;
 }
 
 .pecas {
