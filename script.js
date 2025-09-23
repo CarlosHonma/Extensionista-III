@@ -78,8 +78,8 @@ const questions = [
         question: "O que acontece quando há pouca RAM disponível?",
         answers: [
             { id: 1, text: "O computador para de funcionar completamente", correct: false },
-            { id: 2, text: "O computador usa o disco rígido como 'memória virtual' (swap), ficando mais lento", correct: true },
-            { id: 3, text: "A CPU para de processar dados", correct: false },
+            { id: 2, text: "A CPU para de processar dados", correct: false},
+            { id: 3, text: "O computador usa o disco rígido como 'memória virtual' (swap), ficando mais lento", correct: true },
             { id: 4, text: "Nada acontece, não há diferença", correct: false },
         ],
     },
@@ -88,8 +88,8 @@ const questions = [
     {
         question: "Por que a placa-mãe é chamada de 'coração do computador'?",
         answers: [
-            { id: 1, text: "Porque ela processa todos os dados", correct: false },
-            { id: 2, text: "Porque conecta e integra todos os componentes, permitindo comunicação entre eles", correct: true },
+            { id: 1, text: "Porque conecta e integra todos os componentes, permitindo comunicação entre eles", correct: true },
+            { id: 2, text: "Porque ela processa todos os dados", correct: false },
             { id: 3, text: "Porque armazena todos os arquivos", correct: false },
             { id: 4, text: "Porque resfria os componentes", correct: false },
         ],
@@ -109,9 +109,9 @@ const questions = [
         question: "Qual é a diferença principal entre HDD e SSD?",
         answers: [
             { id: 1, text: "HDD é mais rápido que SSD", correct: false },
-            { id: 2, text: "HDD usa partes mecânicas, SSD usa memória flash", correct: true },
+            { id: 2, text: "Não há diferença entre eles", correct: false},
             { id: 3, text: "SSD é mais barato que HDD", correct: false },
-            { id: 4, text: "Não há diferença entre eles", correct: false },
+            { id: 4, text:  "HDD usa partes mecânicas, SSD usa memória flash", correct: true},
         ],
     },
     {
@@ -147,9 +147,9 @@ const questions = [
         question: "Por que a ventilação é uma função importante do gabinete?",
         answers: [
             { id: 1, text: "Para fazer barulho e indicar que está funcionando", correct: false },
-            { id: 2, text: "Para dissipar o calor e evitar superaquecimento dos componentes", correct: true },
+            { id: 2, text: "Para economizar energia elétrica", correct: false },
             { id: 3, text: "Para manter o computador frio ao toque", correct: false },
-            { id: 4, text: "Para economizar energia elétrica", correct: false },
+            { id: 4, text: "Para dissipar o calor e evitar superaquecimento dos componentes", correct: true },
         ],
     },
     {
